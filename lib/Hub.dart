@@ -3,21 +3,14 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 
-class TeamSelect extends StatefulWidget {
-  const TeamSelect({Key? key}) : super(key: key);
+class Hub extends StatefulWidget {
+  const Hub({Key? key}) : super(key: key);
 
   @override
-  State<TeamSelect> createState() => _TeamSelectState();
+  State<Home> createState() => _HubState();
 }
 
-class _TeamSelectState extends State<TeamSelect> {
-
-  String dropdownvalue = 'Group A';
-  var items = [
-    'Group A',
-    'Group B',
-    'Group C',
-  ];
+class _HubState extends State<Hub> {
 
   @override
   Widget build(BuildContext context) {
@@ -61,8 +54,6 @@ class _TeamSelectState extends State<TeamSelect> {
                     path.set({prefs.getString('uuid').toString(): prefs.getString('uuid')});
                     prefs.setString('Group', dropdownvalue);
                     prefs.setString('path', path.toString());
-                    
-                    Navigator.pushNamed(context, '/hub');
                   },
                   child: Text('Continue', style: TextStyle(color: Colors.black),),
                 ),

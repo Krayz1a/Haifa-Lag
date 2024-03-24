@@ -23,10 +23,12 @@ Future main() async {
 
   runApp(MaterialApp(
     title: 'yes',
-    initialRoute: '/home',
+    initialRoute: prefs.contains("Group") ?? '/hub' : '/Welcome',
     routes: {
-      '/home': (context) => Home(),
+      '/TeamSelect': (context) => TeamSelect(),
       '/missions': (context) => Missions(),
+      '/hub': (context) => Hub(),
+      '/welcome': (context) => Welcome(),
     },
   ));
 }
