@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684131540765",
+    "project_id": "haifa-e830f",
+    "storage_bucket": "haifa-e830f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684131540765:android:fc909eb20c8af968e0cbf4",
+        "android_client_info": {
+          "package_name": "com.example.haifalagapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRuij20H4ehnej3mMWqbO-hyjQjivE2pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
